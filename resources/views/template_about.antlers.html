@@ -1,0 +1,242 @@
+    {{ section:css }}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{ /section:css }}
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="">
+                    {{ partial:main_nav }}
+                    {{ partial:sidenav }}
+                    <div class="overlay"></div>
+                </div>
+                <!-- End Navbar -->
+            </div>
+        </div>
+    </div>      
+    <section class="container-fluid position-relative">
+        <div class="container px-3 pt-sm-8">
+            <div class="row flex-lg-row-reverse align-items-center" style="min-height: 740px;">
+                <div class="col-10 col-sm-8 col-lg-4 offset-lg-2 d-none d-sm-block overflow-hidden">
+                    <img src="assets/img/img-about.png"
+                        class="d-block z-index-2 mx-lg-auto img-fluid img-bottom" alt="" loading="lazy">
+                    <img src="assets/img/icons/spotless.png" class="z-index-1 d-sm-none d-lg-block" alt="" style="position: absolute; top: 20%;">
+                </div>
+                <div class="col-lg-6 z-index-2">
+                    <h1 class="display-5 font-smbold lh-1 mb-4">{{ block_1_sub_title }}</h1>
+                        <div class="lh-2 fs-normal font-medium text-justify">{{ block1article }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-smoke px-3">
+        <div class="container">
+            <div class="row align-items-center py-5" style="min-height: 600px;">
+                <div class="col-lg-6 mb-5 position-relative">
+                    <img src="assets/img/icons/ic-ttg.png" alt="">
+                    <img src="assets/img/icons/spotless.png" alt="" class="spotted">
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 overflow-hidden">
+                    <div class="accordion accordion-me" id="accordionRental">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button font-weight-bold text-end" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Visi
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionRental">
+                                <div class="accordion-body text-sm opacity-8">
+                                    {{ visiarticle | strip_tags:p }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button font-weight-bold text-end collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Misi
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionRental">
+                                <div class="accordion-body text-sm opacity-8">
+                                    {{ misiarticle | strip_tags:p }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button font-weight-bold text-end collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Filosofi
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                                <div class="accordion-body text-sm opacity-8">
+                                    {{ filosofiarticle | strip_tags:p }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white d-flex align-items-center px-3 py-5" style="min-height: 600px;">
+        <div class="container">
+            <div class="row py-5 px-lg-5 bg-content position-relative">
+                <h1 class="display-5 font-smbold lh-1 mb-5 text-center">Achievement</h1>
+                <ul class="nav nav-pills justify-content-center my-5 z-index-3" id="pills-tab" role="tablist">
+                    <li class="nav-item me-3" role="presentation">
+                        <button class="nav-link active" id="pills-sertifikat-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-sertifikat" type="button" role="tab"
+                            aria-controls="pills-sertifikat" aria-selected="true">Sertifikat</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-awards-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-awards" type="button" role="tab" aria-controls="pills-awards"
+                            aria-selected="false">Awards</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-sertifikat" role="tabpanel"
+                        aria-labelledby="pills-sertifikat-tab">
+                        <div class="center">
+                            {{ serifikat }}
+                            <div>
+                                <div class="card cards-in rounded-3 p-0 border-0 m-3">
+                                    <div class="icon icon-shape mx-auto">
+                                        <img src="{{sertifikatimage}}"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            {{ /serifikat }}
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-awards" role="tabpanel" aria-labelledby="pills-awards-tab">
+                        <div class="center">
+                            {{ award }}
+                            <div>
+                                <div class="card cards-in rounded-3 p-0 border-0 m-3">
+                                    <div class="icon-shape mx-auto">
+                                        <img src="{{ awardimage }}"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            {{ /award }}
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white  d-flex align-items-center px-3" style="min-height: 600px;">
+        <div class="container">
+            <div class="row py-5 px-lg-5 position-relative">
+                <h1 class="display-5 font-smbold lh-1 mb-5 text-center">Management</h1>
+                <ul class="nav nav-pills justify-content-center my-5" id="pills-tab" role="tablist">
+                    <li class="nav-item me-3" role="presentation">
+                        <button class="nav-link active" id="pills-bod-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-bod" type="button" role="tab"
+                            aria-controls="pills-bod" aria-selected="true">BOD</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-generalmanager-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-generalmanager" type="button" role="tab" aria-controls="pills-generalmanager"
+                            aria-selected="false">General Manager</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-bod" role="tabpanel"
+                        aria-labelledby="pills-bod-tab">
+                        <div class="center roles">
+                            {{ bods }}
+                            <div class="col-auto">
+                                <div class="inner">
+                                    <img src="{{bodimage}}" class="card-img-top" alt="...">
+                                </div>
+
+                                <div class="m-3 text-center">
+                                    <h6>{{ bodcard_title }}</h6>
+                                    <p class="fs-12 fw-light">{{ boddescription }}</p>
+                                </div>
+                            </div>
+                            {{ /bods }}
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-generalmanager" role="tabpanel" aria-labelledby="pills-generalmanager-tab">
+                        <div class="center roles">
+                            {{ gms }}
+                            <div class="col-auto">
+                                <div class="inner">
+                                    <img src="{{ gmimage }}" class="card-img-top" alt="...">
+                                </div>
+
+                                <div class="m-3 text-center">
+                                    <h6>{{ gmcard_title }}</h6>
+                                    <p class="fs-12 fw-light">{{ gmdescription }}
+                                    </p>
+                                </div>
+                            </div>
+                            {{ /gms }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial:footer }}
+
+{{ section:js }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    <script>
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: false,
+                centerPadding: '60px',
+                slidesToShow: 4,
+                arrows: true,
+                loop: false,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1,
+                            loop: false
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+{{ /section:js }}

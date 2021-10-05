@@ -1,0 +1,160 @@
+    <div class="container">
+        <div>
+            {{ partial:main_nav }}
+            {{ partial:sidenav }}
+            <div class="overlay"></div>
+        </div> 
+    </div>
+    <section class="bg-landing" style="margin-top:-7rem">
+        <div class="container">
+            <div class="row align-items-center" style="height: 800px;">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <div class="pt-sm-8 px-3">
+                        <h1 class="display-2 font-bold lh-1h my-5">{{ block_1_sub_title }}</h1>
+                        <p class="lh-2 font-light fs-normal">{{ block1article | strip_tags:p  }} </p>
+                        <div class="text-center my-5">
+                            <button type="button" class="btn btn-ldInner" onclick="location.href='{{ block1articlelink }}';">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-n6 z-index-3 py-5">
+        <div class="row col-lg-9 mx-auto innerCard">
+            {{ block_1_card }}
+                <div class="col-lg-4 pb-5">
+                    <div class="card h-100 overflow-hidden">
+                        <div class="header">
+                            <img src="{{ block1image }}" alt="" class="w-100 img-header">
+                        </div>
+                        <div class="card-body d-flex justify-content-end flex-column">
+                            <h5 class="mt-2">{{ block1card_title }}</h5>
+                            <p>{{ block1description | strip_tags:p  }}</p>
+                        </div>
+                    </div>
+                </div>
+            {{ /block_1_card }}
+        </div>
+
+    </div>
+    <section class="about bg-white px-3">
+        <div class="container">
+            <div class="row align-items-center py-5" style="min-height: 700px;">
+                <div class="col-lg-6 mb-5">
+                    <h1 class="display-5 font-smbold lh-1 mb-4">{{ block_2_sub_title }}</h1>
+                    <p class="lh-2">{{ block2article | strip_tags:p }}</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
+                        <a href="{{ block2articlelink }}"> <button type="button" class="btn btn-outline-primary"
+                            >{{ block2articlelink_label }}</button> </a>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-12 col-lg-5 offset-lg-1 overflow-hidden">
+                    <ul
+                        class="d-md-flex align-items-center justify-content-between flex-md-nowrap flex-wrap list-unstyled">
+                        <li class="text-dark text-nowrap first">
+                            <h1 class="display-5 font-smbold mb-lg-0 mb-1">{{ upperbig_label | strip_tags:p  }} </h1>
+                            <p>{{ uppersmall_label | strip_tags:p  }}</p>
+                        </li>
+                        <li class="lines d-md-block d-none d-sm-none text-dark"></li>
+                        <li class="d-flex flex-lg-row flex-column align-items-center mb-md-0 text-dark text-wrap">
+                            <p class="mb-0">{{ upperarticle | strip_tags:p }}</p>
+                        </li>
+                    </ul>
+                    <ul
+                        class="d-md-flex align-items-center justify-content-between flex-md-nowrap flex-wrap list-unstyled">
+                        <li class="text-dark text-nowrap second">
+                            <h1 class="display-5 font-smbold mb-lg-0 mb-1">{{ lowerbig_label | strip_tags:p  }} </h1>
+                            <p>{{ lowersmall_label | strip_tags:p  }}</p>
+                        </li>
+                        <li class="lines d-md-block d-none d-sm-none text-dark"></li>
+                        <li class="d-flex flex-lg-row flex-column align-items-center mb-md-0 text-dark text-wrap">
+                            <p class="mb-0">{{ lowerarticle | strip_tags:p }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-smoke px-3 py-lg-5">
+        <div class="container">
+            <div class="row align-items-center py-5 px-lg-5">
+                <h1 class="display-5 font-smbold lh-1 mb-4 text-center">{{ block_3_sub_title }}</h1>
+                {{ block_3_card }}
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card cards move-on-hover fbl h-100">
+                            <h5 class="mt-2">{{ block3card_title }}</h5>
+                            <div class="icon icon-shape">
+                                <img src="{{ block3image }}" class="innerIcon" alt="">
+                            </div>
+                            <p>{{ block3description | strip_tags:p }}</p>
+                        </div>
+                    </div>
+                {{ /block_3_card }}
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-smoke px-3 py-lg-5">
+        <div class="container">
+            <h1 class="display-5 font-smbold lh-1 mb-4 text-center">{{ block_4_sub_title }}</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 align-items-center justify-content-center py-5 px-lg-5">
+                {{ block_4_card }}
+                <div class="col my-5 px-5">
+                    <div class=" border-0 text-center fbl h-100">
+                        <div class="icon icon-shape">
+                            <img src="{{ block4image }}" class="innerIcon" alt="">
+                        </div>
+                        <h5 class="my-4">{{ block4card_title }}</h5>
+                        <p class="card-title mb-0 fw-normal text-truncate d-inline-block text-wrap" style="max-height: 35px;">{{ block4description | strip_tags:p }}</p>
+                        <a href="/solution" class="text-primary text-decoration-none link-primary icon-move-right text-sm">Lihat Detail <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                {{ /block_4_card }}
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-inner px-3 overflow-hidden">
+        <img src="/assets/img/icons/pattern-lines.svg" class="position-absolute w-100 h-100" alt="">
+        <div class="container">
+            <div class="row align-items-center py-5 px-lg-5" style="min-height: 700px;">
+                <div class="col-lg-6 mb-xs-5 text-white z-index-3">
+                    <h1 class="display-5 font-smbold lh-1 mb-4">{{ block_5_sub_title }}</h1>
+                    <p class="lh-2">{{ block5article | strip_tags:p }}</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
+                        <button type="button" class="btn btn-outline-primary primary px-4"
+                            onclick="location.href='https://ayoopeduli.com/';">{{ block5articlelink_label }}</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden position-absolute right-0 d-lg-block d-none me-n8">
+                    <img class="img-fluid w-100" src="{{ block5image }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white px-3 py-lg-5">
+        <div class="container d-flex align-items-center" style="min-height: 500px;">
+            <div class="row align-items-center py-5 px-lg-5">
+                <h1 class="display-5 font-smbold lh-1 mb-5 text-center">{{ block_6_sub_title }}</h1>
+                {{ partners }}
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card rounded-3 p-4">
+                        <div class="icon icon-shape mx-auto">
+                            <img src="{{ block6image }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                {{ /partners }}
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card rounded-3 p-4">
+                        <div class="icon icon-shape mx-auto">
+                            <img src="https://airmasgroup.co.id/assets/images/asus.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial:footer }}

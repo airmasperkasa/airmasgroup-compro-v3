@@ -1,0 +1,30 @@
+title: Card
+fields:
+  -
+    handle: card_title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    handle: description
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      smartypants: false
+      antlers: false
+      display: Description
+      type: markdown
+      icon: markdown
+      listable: hidden
+      instructions_position: above
+  -
+    import: image

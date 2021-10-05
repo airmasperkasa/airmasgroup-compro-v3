@@ -1,0 +1,44 @@
+tree:
+  -
+    id: ed991971-0e2d-479a-abb4-cd2cb5700f9a
+    title: Home
+  -
+    id: 27ff8cc2-b367-460f-91bb-4106be13c317
+    title: 'First Column'
+    children:
+      -
+        id: 8ce81f4d-ff0a-462a-8f5c-0e7a3e08d21f
+        title: 'Tentang Air Mas'
+        url: about
+      -
+        id: ca7f722b-2ab9-4a4f-9de1-263df3c69022
+        title: Solusi
+        url: solution
+      -
+        id: 68510d07-99fc-4557-a781-d5b59a31a886
+        title: Produk
+        url: product
+      -
+        id: 153864fb-53b1-4d46-a221-b4c8f25531ed
+        title: Bisnis
+        url: business
+  -
+    id: 3db956a8-e345-4031-8bc7-f8d5822c63ff
+    title: 'Second Column'
+    children:
+      -
+        id: 7fbfef63-2326-426a-9cdb-3cb9ca12426e
+        title: Partner
+        url: partner
+  -
+    id: 5b802cc5-54bf-4216-9535-8588b23faa81
+    title: 'Third Column'
+    children:
+      -
+        id: 6f56c45a-1cda-4dcd-8631-1bd4dd83e074
+        title: 'Syarat & Ketentuan'
+        url: terms
+      -
+        id: 7dbbf3c0-e21b-44a3-9539-feb9ca9f003c
+        title: 'Kebijakan Privasi'
+        url: Privacy

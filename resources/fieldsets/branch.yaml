@@ -1,0 +1,55 @@
+title: Branch
+fields:
+  -
+    handle: name
+    field:
+      input_type: text
+      character_limit: 50
+      antlers: false
+      display: Name
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    handle: address
+    field:
+      character_limit: '200'
+      antlers: false
+      display: Address
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    handle: phone_number
+    field:
+      input_type: tel
+      character_limit: 20
+      antlers: false
+      display: 'Phone Number'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      validate:
+        - numeric
+  -
+    handle: taxonomy_terms
+    field:
+      max_items: 1
+      mode: select
+      create: true
+      taxonomies:
+        - city
+      display: 'Taxonomy Terms'
+      type: terms
+      icon: taxonomy
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required

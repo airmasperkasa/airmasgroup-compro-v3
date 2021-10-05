@@ -1,0 +1,95 @@
+{{ section:css }}
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+      />
+{{ /section:css }}
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="">
+                    {{ partial:main_nav }}
+                    {{ partial:sidenav }}
+                    <div class="overlay"></div>
+                </div>
+                <!-- End Navbar -->
+            </div>
+            <div class="products clearfix">
+                <div class="container d-flex align-items-center">
+                    <div class="row row-cols-1 px-lg-5">
+                        <h1 class="display-6 font-smbold lh-1 my-5 text-start">Store Location
+                        </h1>
+                        <div class="container mb-5">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <select class="form-control form-select rounded-2 text-nowrap w-150" name="choice-city" id="choice-city" placeholder="City">
+                                        <option value="all" selected="">Tampil Semua</option>
+                                        {{ taxonomy from='city' }}
+                                            <option class="text-nowrap" value="city{{ increment }}">{{ title }}</option>
+                                        {{ /taxonomy }}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        {{ taxonomy:city }}
+                        {{ if entries }}
+                            {{ entries }}
+                                <div class="col-lg-6 col-md-6 mb-4 locItem city{{ increment:again by='0'}}">
+                                    <div class="card border-secondary p-3 mb-3 overflow-hidden h-100">
+                                        <div class="card-header font-medium fs-normal p-0 bg-white border-0 h5 mb-0">{{ title }}
+                                        </div>
+                                        <div class="card-body px-0 text-secondary">
+                                            <div class="card-title mb-3 fw-normal">{{ address }}
+                                            </div>
+                                            {{ if phone }}
+                                            <p class="mb-2 fw-normal"><a href="tel:{{ phone }}"
+                                                    class="text-muted text-decoration-none link-primary">
+                                                    <i class="far fa-phone-alt"></i>
+                                                    {{ phone }}</a></p>
+                                            {{ endif }}
+
+                                            {{ if email }}
+                                            <p class="fw-normal"><a href="mailto:{{ email }}"
+                                                    class="text-muted text-decoration-none link-primary">
+                                                    <i class="far fa-envelope"></i>
+                                                    {{ email }} </a>
+                                            {{ endif }}
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ /entries }}
+                        {{ endif }}
+                        <p class="{{ increment:again }}" style="display: none;"></p>
+                        {{ /taxonomy:city }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial:footer }}
+
+    {{ section:js }}
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=Array.from%2Ces5%2Ces6%2CSymbol%2CSymbol.iterator%2CDOMTokenList%2CObject.assign%2CCustomEvent%2CElement.prototype.classList%2CElement.prototype.closest%2CElement.prototype.dataset%2CArray.prototype.find%2CArray.prototype.includes%2Cfetch"></script>
+
+    <script>
+        const element = document.querySelector('#choice-city');
+        const choices = new Choices(element);
+
+        $( document ).ready(function() {
+            $("#choice-city").on('change', function changeLoc(){
+                var picked = $("#choice-city :selected").val();
+                if ( picked == 'all' ){
+                    $(".locItem").css('display', 'block');
+                } else {
+                console.log("picked");
+                    $(".locItem").css('display', 'none');
+                    $("." + picked).css('display', 'block');
+                }
+            });
+        });
+    </script>
+
+    {{ /section:js }}

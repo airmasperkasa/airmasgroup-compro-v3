@@ -1,0 +1,29 @@
+tree:
+  -
+    id: 53c4153e-baa3-4fb7-ae06-bb3bace4dd74
+    title: 'Tentang Air Mas'
+    url: about
+  -
+    id: fa77f42f-32c4-4bd9-a4db-1a46e960d936
+    title: 'Cabang Kami'
+    url: branch
+  -
+    id: 3c229635-c00b-48f7-94c8-a2dc9892fcf6
+    title: Produk
+    url: product
+  -
+    id: e0029d7e-66dd-4ab9-a8a9-368b4af44d0c
+    title: Solusi
+    url: solution
+  -
+    id: fb97880d-2f9a-4627-b64f-b71e5c635c2a
+    title: 'Lini Bisnis'
+    url: business
+  -
+    id: d0aa46d1-1dcf-46d8-bc0b-9d7dda1515b9
+    title: Karir
+    url: 'https://user.ayoojob.id'
+  -
+    id: 47237309-d540-4af1-8394-8b30724c96b5
+    title: Berita
+    url: 'https://ayooberita.com'

@@ -1,0 +1,50 @@
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="">
+                    {{ partial:main_nav }}
+                    {{ partial:sidenav }}
+                    <div class="overlay"></div>
+                </div>
+                <!-- End Navbar -->
+            </div>
+            <div class="products clearfix">
+                <div class="container">
+                    <div class="row px-lg-5">
+                        <h1 class="display-5 font-smbold lh-1 my-5 text-center">Rekan Kami</h1>
+                        {{ items }}
+                        <div class="col-lg-12 my-5">
+                            <div class="row {{ switch between='|flex-row-reverse' }}">
+                                <div class="col-lg-8 {{ switch between='|justify-content-center' }} d-flex flex-column">
+                                    <div
+                                        class="card card-blend card-inner border-0 justify-content-center rounded-lg p-4">
+                                        <div class="d-flex">
+                                            <div class="row align-items-center justify-content-center">
+                                                {{ images }}
+                                                <div
+                                                    class="col-md-3 d-flex justify-content-center col-6 p-0 my-2 mx-auto">
+                                                    <img class="img-fluid"
+                                                        src="{{ image }}"
+                                                        alt="logo">
+                                                </div>
+                                                {{ /images }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 justify-content-center d-flex flex-column pt-3 {{ switch between='text-lg-end|text-lg-start' }}">
+                                    <h3 class="text-darker font-smbold">{{ item_title }}
+                                    </h3>
+                                    <div class="fs-normal">
+                                        {{ item_description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ /items }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ partial:footer }}

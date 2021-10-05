@@ -1,0 +1,30 @@
+title: Partner
+fields:
+  -
+    handle: partner_name
+    field:
+      input_type: text
+      character_limit: 20
+      antlers: false
+      display: Name
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    import: image
+  -
+    handle: partner_type
+    field:
+      inline: false
+      options:
+        1: Distributor
+        2: 'Authorized Reseller'
+        3: Klien
+      display: 'Partner Type'
+      type: checkboxes
+      icon: checkboxes
+      listable: hidden
+      instructions_position: above

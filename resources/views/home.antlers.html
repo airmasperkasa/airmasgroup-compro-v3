@@ -1,0 +1,9 @@
+<ul>
+    {{ nav:navbar }}
+      <li>
+        <a href="{{ redirect_url or url }}"{{ if is_current || is_parent }} class="current"{{ /if }}>
+          {{ title }}
+        </a>
+      </li>
+    {{ /nav:navbar }}
+  </ul>

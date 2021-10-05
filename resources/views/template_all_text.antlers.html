@@ -1,0 +1,24 @@
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="">
+                        {{ partial:main_nav }}
+                        {{ partial:sidenav }}
+                        <div class="overlay"></div>
+                    </div>
+                    <!-- End Navbar -->
+                </div>
+                <div class="products clearfix">
+                    <div class="container">
+                        <div class="row px-lg-5">
+                            <h1 class="display-5 fw-bold lh-1 my-5 text-start">{{ sub_title }}</h1>
+                            <div class="row px-lg-5 text-wrap" style="width: 100%;">
+                                {{ article }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial:footer }}

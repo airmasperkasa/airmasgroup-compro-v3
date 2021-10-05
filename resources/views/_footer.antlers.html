@@ -1,0 +1,70 @@
+
+    <section class="footer bg-dark d-flex align-items-center px-3">
+        <div class="container py-5 text-white">
+            <a href="" class="d-inline-flex align-items-center mb-4 text-decoration-none">
+                <img src="{{ info:footer_logo }}" class="me-3" style="width:90px" alt=""> <span
+                    class="text-white h5 mb-0 link-primary">PT. Air Mas Perkasa</span></a>
+            <div class="row align-items-start justify-content-start">
+                <div class="col-lg-4 mb-3">
+
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            {{ info:address }}
+                        </li>
+                        <li class="mb-2"><a href="tel:{{ info:phone_number }}"
+                                class="text-white text-decoration-none link-primary">
+                                <i class="far fa-phone-alt"></i>
+                                {{ info:phone_number }} </a></li>
+                        <li class="mb-2"><a href="mailto:{{ info:contact_email }}"
+                                class="text-white text-decoration-none link-primary">
+                                <i class="far fa-envelope"></i>
+                                {{ info:contact_email }} </a></li>
+                    </ul>
+                </div>
+                {{ nav:footer }}
+                <div class="col-6 col-lg-2 mb-3 d-none d-md-block">
+                    <ul class="list-unstyled">
+                        {{ children }}
+                            <li class="mb-2"><a href="{{ url }}"
+                                class="link-primary text-white text-decoration-none">{{ title }}</a></li>
+                        {{ /children }}
+                    </ul>
+                </div>
+                {{ /nav:footer }}
+                <div class="col-xs-12 col-lg-2 mb-3">
+                    <h6>Follow Kami</h6>
+                    <ul class="d-flex flex-row ms-n3 nav sosmed">
+                        <li class="nav-item">
+                            <a class="nav-link linkedin" href="https://id.linkedin.com/company/airmas-perkasa"
+                                target="_blank">
+                                <i class="fab fa-lg fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link youtube" href="https://www.youtube.com/user/bazoparte" target="_blank">
+                                <i class="fab fa-lg fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link instagram" href="https://www.instagram.com/airmasgroupindonesia/?hl=en"
+                                target="_blank">
+                                <i class="fab fa-lg fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link facebook" href="https://www.facebook.com/airmasid" target="_blank">
+                                <i class="fab fa-lg fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twitter" href="" target="_blank">
+                                <i class="fab fa-lg fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>

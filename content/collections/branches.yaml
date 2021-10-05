@@ -1,0 +1,14 @@
+title: Branches
+inject:
+  view_model: App\ViewModels\NavCount
+template: branches
+layout: layout
+mount: 26f3fe70-455a-459c-9ba7-7cfd9836f708
+taxonomies:
+  - city
+revisions: false
+route: '/branch/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

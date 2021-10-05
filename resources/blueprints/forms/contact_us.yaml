@@ -1,0 +1,60 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: Name
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: email_address
+        field:
+          input_type: email
+          antlers: false
+          display: 'Email Address'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+            - email
+      -
+        handle: subject
+        field:
+          options:
+            all: Subject
+            Subject1: Subject1
+            Subject2: Subject2
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Subject
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: pesan
+        field:
+          antlers: false
+          display: Pesan
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required

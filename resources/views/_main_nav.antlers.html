@@ -1,0 +1,55 @@
+---
+count2: 4
+---
+{{ nav:navbar }}
+    <p class="{{ increment:again from='1' }}" style="display: none;"></p>
+{{ /nav:navbar }}
+<nav
+    class="navbar navbar-expand-lg blur-rounded top-0 start-0 end-0 px-lg-5 py-3 d-flex justify-content-between" style="z-index: 1021;">
+    <div class="container-fluid px-lg-4 d-flex justify-content-center">
+        <header class="d-flex flex-wrap justify-content-between align-items-center">
+            <ul class='nav {{ current_uri == "/" ? "nav-header" : "nav-cheader" }} nav-pills text-center collapse navbar-collapse'>
+
+                {{ nav:navbar }}
+                <p class="{{ increment:again by='-2' }}" style="display: none;"></p>
+                    {{ if (index == item_count) }}
+                        <li class="nav-item">
+                            <a class="navbar-brand mx-4" href="/" rel="tooltip" title="" data-placement="bottom">
+                                <img src='{{ current_uri == "/" ? info:logo_dk_bg : info:logo_lt_bg }}' alt="" style="width: 90px;">
+                            </a>
+                        </li>
+                    {{ endif }}
+                    <li class="nav-item">
+                            <a class="{{ current_uri | substr:1 ==  url ? 'nav-link active' : 'nav-link' }}" aria-current="page" href="{{ url }}">{{ title }}</a>
+                    </li>
+                {{ /nav:navbar }}
+                {{ if (item_count == -1) }}
+                    <li class="nav-item">
+                        <a class="navbar-brand mx-4" href="/" rel="tooltip" title="" data-placement="bottom">
+                            <img src='{{ current_uri == "/" ? "assets/img/logo-airmas.svg" : "assets/img/logoblack-airmas.svg"}}' alt="" style="width: 90px;">
+                        </a>
+                    </li>
+                {{ endif }}
+                <li class="nav-item">
+                    <a href="contact" type="button" class="btn btn-landing">Contact Us</a>
+                </li>
+            </ul>
+          </header>
+          <div class="d-flex w-100 justify-content-between align-items-center d-lg-none">
+              <div class="col">
+            <a class="navbar-brand mx-2" href="{{ '/' }}" rel="tooltip" title="" data-placement="bottom">
+                <img src='{{ current_uri == "/" ? "assets/img/logo-airmas.svg" : "assets/img/logoblack-airmas.svg"}}' alt="" style="width: 90px;">
+            </a>
+            </div>
+            <div class="col d-flex justify-content-end">
+            <button class="navbar-toggler shadow-none ms-md-2 menu-bar" type="button">
+                <span class="navbar-toggler-icon {{ current_uri == "/" ? "li-icon" : "" }} mt-2">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </span>
+            </button>
+            </div>
+        </div>
+    </div>
+</nav>

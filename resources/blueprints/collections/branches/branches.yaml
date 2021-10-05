@@ -1,0 +1,86 @@
+title: Branches
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Name
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: address
+        field:
+          type: markdown
+          localizable: true
+          display: Address
+          instructions_position: above
+          listable: hidden
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          validate:
+            - required
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          antlers: false
+          display: 'Phone Number'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - numeric
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - email
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: city
+        field:
+          type: terms
+          taxonomies:
+            - city
+          display: City
+          mode: select
+          create: true
+          icon: taxonomy
+          listable: false
+          instructions_position: above
+          validate:
+            - required
+          max_items: 1
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+          instructions_position: above
+          listable: hidden
+          generate: true

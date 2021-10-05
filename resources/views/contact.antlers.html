@@ -1,0 +1,92 @@
+{{ section:css }}
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+      />
+{{ /section:css }}
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="">
+                    {{ partial:main_nav }}
+                    {{ partial:sidenav }}
+                    <div class="overlay"></div>
+                </div>
+                <!-- End Navbar -->
+            </div>
+            <div class="products clearfix">
+                <div class="container">
+                    <div class="row px-lg-5">
+                        <h1 class="display-5 fw-bold lh-1 my-5 text-start">Kontak kami</h1>
+                        <div class="col-12">
+                            <div class="row">
+
+                                {{ form:set is="contact_us" }}
+                                {{ if {form:errors} }}
+                                    <div class="bg-red-300 text-white p-2">
+                                        {{ form:errors }}
+                                            {{ value }}
+                                        {{ /form:errors }}
+                                    </div>
+                                {{ /if }}
+                                    
+                                <div class="col-lg-5 mb-4">
+                                    {{ form:create in="contact_us" }}
+                                        {{ fields }}
+                                        <div class="form-floating mb-3">
+                                            {{ field }}
+                                            <label for="floatingInput">{{ display }}</label>
+                                        </div>
+                                        {{ /fields }}
+                                            <div class="form-group mb-3">
+                                            <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal" data-image="image">
+                                            </div>
+                                            <input class="form-control" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="my-3 d-flex justify-content-end">
+                                                <button class="btn btn-ldInner" type="submit"> Submit</button>
+                                            </div>
+                                        </div>
+                                    {{ /form:create }}
+                                </div>
+                                {{ /form:set }}
+
+
+                                <div class="col-lg-3 offset-lg-1">
+                                    <div class="">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                {{ info:address }}
+                                            </li>
+                                            <li class="mb-2"><a href="tel:{{ info:phone_number }}"
+                                                    class="text-dark text-decoration-none link-primary">
+                                                    <i class="far fa-phone-alt"></i>
+                                                    {{ info:phone_number }} </a></li>
+                                            <li class="mb-2"><a href="{{ info:contact_email }}"
+                                                    class="text-dark text-decoration-none link-primary">
+                                                    <i class="far fa-envelope"></i>
+                                                    {{ info:contact_email }} </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{ partial:footer }}
+
+    {{ section:js }}
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=Array.from%2Ces5%2Ces6%2CSymbol%2CSymbol.iterator%2CDOMTokenList%2CObject.assign%2CCustomEvent%2CElement.prototype.classList%2CElement.prototype.closest%2CElement.prototype.dataset%2CArray.prototype.find%2CArray.prototype.includes%2Cfetch"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    {{ /section:js }}

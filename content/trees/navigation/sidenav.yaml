@@ -1,0 +1,21 @@
+tree:
+  -
+    id: 082b0f3e-64cb-459a-a17d-94eb67bf1e08
+    title: 'Tentang Air Mas'
+    url: about
+  -
+    id: 4b510352-d672-4ed3-8cd0-68d66857a825
+    title: Cabang
+    url: branches
+  -
+    id: 0a4b86a3-e735-42a3-a26d-6ff99d1a7bba
+    title: Solusi
+    url: solution
+  -
+    id: 5e3df0a2-c15a-4b7b-a16e-e6c76214279c
+    title: 'Lini Bisnis'
+    url: business
+  -
+    id: f4504b67-2aed-44a2-8428-01819cf593c9
+    title: FAQ
+    url: faq

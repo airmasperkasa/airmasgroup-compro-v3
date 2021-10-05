@@ -1,0 +1,7 @@
+title: 'Article w Link'
+fields:
+  -
+    import: article
+  -
+    import: link
+    prefix: article

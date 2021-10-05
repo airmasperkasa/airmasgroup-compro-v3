@@ -1,0 +1,30 @@
+title: 'Mini Info'
+fields:
+  -
+    handle: big_label
+    field:
+      input_type: text
+      character_limit: 10
+      antlers: false
+      display: 'Big Label'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    handle: small_label
+    field:
+      input_type: text
+      character_limit: 20
+      antlers: false
+      display: 'Small Label'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    import: article
