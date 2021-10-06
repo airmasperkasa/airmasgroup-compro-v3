@@ -22,24 +22,64 @@ filosofiarticle: |-
   5. Loyalitas
 serifikat:
   -
-    sertifikatcard_title: ser
-    sertifikatimage: asus.jpg
+    sertifikatcard_title: ser1
+    sertifikatimage: 1.jpg
     type: new_set
     enabled: true
   -
-    sertifikatcard_title: refwe
-    sertifikatimage: canon.jpg
+    sertifikatcard_title: ser2
+    sertifikatimage: 2.jpg
+    type: new_set
+    enabled: true
+  -
+    sertifikatcard_title: ser3
+    sertifikatimage: 3.jpg
+    type: new_set
+    enabled: true
+  -
+    sertifikatcard_title: ser4
+    sertifikatimage: 4.jpg
+    type: new_set
+    enabled: true
+  -
+    sertifikatcard_title: ser5
+    sertifikatimage: 5.jpg
+    type: new_set
+    enabled: true
+  -
+    sertifikatcard_title: ser6
+    sertifikatimage: 6.jpg
     type: new_set
     enabled: true
 award:
   -
-    awardcard_title: svg
-    awardimage: 2.svg
+    awardcard_title: awa1
+    awardimage: a.jpg
     type: new_set
     enabled: true
   -
-    awardcard_title: awa
-    awardimage: 2(1).svg
+    awardcard_title: awa2
+    awardimage: b.jpg
+    type: new_set
+    enabled: true
+  -
+    awardcard_title: awa3
+    awardimage: c.jpg
+    type: new_set
+    enabled: true
+  -
+    awardcard_title: awa4
+    awardimage: d.jpg
+    type: new_set
+    enabled: true
+  -
+    awardcard_title: awa5
+    awardimage: e.jpg
+    type: new_set
+    enabled: true
+  -
+    awardcard_title: awa6
+    awardimage: f.jpg
     type: new_set
     enabled: true
 bods:
@@ -51,8 +91,26 @@ bods:
     enabled: true
   -
     bodcard_title: 'Suryono Ken'
-    boddescription: 'Chief Cinsumer Director'
+    boddescription: 'Chief Consumer Director'
     bodimage: Suryono-Ken.jpg
+    type: new_set
+    enabled: true
+  -
+    bodcard_title: 'Indrawati Atmojo'
+    boddescription: 'Chief Finance Officer'
+    bodimage: Indrawati-Atmojo.jpg
+    type: new_set
+    enabled: true
+  -
+    bodcard_title: 'Carlos Safelix'
+    boddescription: 'Finance Director'
+    bodimage: Carlos-Safelix.jpg
+    type: new_set
+    enabled: true
+  -
+    bodcard_title: 'Arikun Widodo'
+    boddescription: 'Commercial Director'
+    bodimage: Arikun-Widodo.jpg
     type: new_set
     enabled: true
 gms:
@@ -68,8 +126,44 @@ gms:
     gmimage: Heni.jpg
     type: new_set
     enabled: true
+  -
+    gmcard_title: 'Budi Sugiarto'
+    gmdescription: 'GM Presales'
+    gmimage: Budi-Sugiarto.jpg
+    type: new_set
+    enabled: true
+  -
+    gmcard_title: Johan
+    gmdescription: 'GM Kerjasama'
+    gmimage: Johan.jpg
+    type: new_set
+    enabled: true
+  -
+    gmcard_title: 'Tommy Rusli'
+    gmdescription: 'GM IT & Presalas'
+    gmimage: Tommy-Rusli.jpg
+    type: new_set
+    enabled: true
+  -
+    gmcard_title: Rendy
+    gmdescription: 'GM Creative dan Youtube'
+    gmimage: no-image.png
+    type: new_set
+    enabled: true
+  -
+    gmcard_title: Mulyati
+    gmdescription: 'SM Goverment'
+    gmimage: Mulyanti.jpg
+    type: new_set
+    enabled: true
+  -
+    gmcard_title: 'Fadilah Ilmi'
+    gmdescription: 'SM Goverment'
+    gmimage: Fadillah-Ilmi.jpg
+    type: new_set
+    enabled: true
 updated_by: 2c75e6b1-4ee4-4f77-b8bf-9dc2fbd35e55
-updated_at: 1633062231
+updated_at: 1633491301
 block1article: |-
   PT Air Mas Perkasa (Air Mas Group) merupakan perusahaan Teknologi Informasi yang bergerak di lini pengadaan barang dan jasa pemerintah, e-commerce, dan unit-unit usaha lainnya. Didirikan oleh Basuki Surodjo pada 1 Januari 2008, AirMas Group telah berpengalaman lebih dari 11 tahun dalam bidang IT, mulai dari bisnis distribusi, retail, sampai dengan e-commerce. Sejak berdirinya, AirMas Group telah menjalin kerja sama dengan brand-brand IT internasional dan telah melayani pelanggan, mulai dari lembaga pemerintah, korporasi, hingga perorangan.
 

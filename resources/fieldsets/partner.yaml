@@ -15,16 +15,3 @@ fields:
         - required
   -
     import: image
-  -
-    handle: partner_type
-    field:
-      inline: false
-      options:
-        1: Distributor
-        2: 'Authorized Reseller'
-        3: Klien
-      display: 'Partner Type'
-      type: checkboxes
-      icon: checkboxes
-      listable: hidden
-      instructions_position: above

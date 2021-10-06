@@ -38,7 +38,25 @@ block_3_card:
   -
     block3card_title: 'Ritel & Distribusi'
     block3description: 'Bisnis ritel dan distribusi yang tersebar di seluruh Indonesia'
+    block3image: 1.svg
+    type: new_set
+    enabled: true
+  -
+    block3card_title: E-Commerce
+    block3description: 'Air Mas Group merupakan penyedia layanan E-Commerce sejak 2008'
     block3image: 2.svg
+    type: new_set
+    enabled: true
+  -
+    block3card_title: Layanan
+    block3description: 'Layanan ekspedisi dan Purna-Jual'
+    block3image: 3.svg
+    type: new_set
+    enabled: true
+  -
+    block3card_title: 'App & Web Development'
+    block3description: 'We get insulted by others, lose trust for those We get back.'
+    block3image: 4.svg
     type: new_set
     enabled: true
 block_4_sub_title: 'Solusi Kami'
@@ -46,11 +64,35 @@ block_4_card:
   -
     block4card_title: 'Network Security'
     block4description: 'Sistem keamanan bukanlah sebuah alat yang bekerja sendiri, melainkan adalah sistem yang bekerja untuk menciptakan network environment yang aman. Kami adalah ahlinya dalam bidang firewall, intelligence intrusion detection and prevention, virtual private network, secure web access, security monitoring system, security information & management solution, antivirus endpoint solution, dan alat sekuritas lainnya yang dapat melindungi sistem anda secara fisik maupun virtual.'
-    block4image: 2(1).svg
+    block4image: 1(1)-1633490092.svg
     block4cardlink_label: 'Lihat Detail'
     type: new_set
     enabled: true
     block4cardlink: 'entry::97cf2ef7-b55d-428b-a182-ffb2647ba64b'
+  -
+    block4card_title: 'Network Communication Infrastucture'
+    block4description: 'Memanfaatkan teknologi mutakhir, kami siap membantu perusahaan Anda membuat Network & Communication Infrastructure yang bisa diandalkan dengan biaya yang efektif. Solusi ini meningkatkan konektivitas lokal maupun jarak jauh Anda yang dapat digunakan untuk DC-DRC replications maupun voice atau video conference.'
+    block4image: 2(1).svg
+    type: new_set
+    enabled: true
+  -
+    block4card_title: 'Choosing the right server'
+    block4description: 'Dalam memilih sebuah server, termasuk sebuah virtual machine dan container, banyak faktor yang dapat dipertimbangkan. Kami dapat membantu anda dalam memilih dasar yang sesuai dengan kebutuhan server perusahaan anda.'
+    block4image: 3(1).svg
+    type: new_set
+    enabled: true
+  -
+    block4card_title: 'Storage Solutions'
+    block4description: 'Perusahaan anda dapat memilih berbagai solusi penyimpanan berdasarkan keperluan bisnis dan kondisi yang perusahaan anda perlukan. Dari begitu banyak solusi penyimpanan, inilah opsi yang paling sering digunakan: SAN Storage, NAS Storage, DAS Storage, iSCSI, FC dan UTP connections. Kami dapat membantu anda dalam menentukan solusi penyimpanan yang perusahaan anda butuhkan.'
+    block4image: 4(1).svg
+    type: new_set
+    enabled: true
+  -
+    block4card_title: 'Data Center Solutions'
+    block4description: 'Kami menyediakan solusi pusat data untuk men-support transformasi digital perusahaan anda dalam meningkatkan sertifkasi dari institusi tepercaya seperti Uptime Institute atau EPI for ANSI/TIA-942. Layanan ini digunakan untuk memastikan reabilitas, efisiensi, dan keaman tinggi untuk menjamin berkembangnya bisnis anda.'
+    block4image: 5.svg
+    type: new_set
+    enabled: true
 block_5_sub_title: 'Program CSR'
 block5article: 'PT Air Mas Perkasa adalah bagian dari Air Mas Group. Kami merupakan Perusahan Nasional yang mengedepankan Teknologi Informasi, yang bergerak pada lini pengadaan barang & jasa pemerintah/swasta, e-commerce, serta berbagai cakupan lini bisnis lainnya. Perusahaan ini didirikan'
 block5articlelink_label: 'Learn More'
@@ -62,8 +104,43 @@ partners:
     block6image: asus.jpg
     type: new_set
     enabled: true
+  -
+    block6partner_name: Lexmark
+    block6image: lexmark.jpg
+    type: new_set
+    enabled: true
+  -
+    block6partner_name: Canon
+    block6image: canon.jpg
+    type: new_set
+    enabled: true
+  -
+    block6partner_name: Microsoft
+    block6image: microsoft.jpg
+    type: new_set
+    enabled: true
+  -
+    block6partner_name: IBM
+    block6image: ibm.jpg
+    type: new_set
+    enabled: true
+  -
+    block6partner_name: Dell
+    block6image: dell.jpg
+    type: new_set
+    enabled: true
+  -
+    block6partner_name: Zyrex
+    block6image: zyrex.jpg
+    type: new_set
+    enabled: true
+  -
+    block6partner_name: 'Fuji Xerox'
+    block6image: fuji-xerox.jpg
+    type: new_set
+    enabled: true
 updated_by: 2c75e6b1-4ee4-4f77-b8bf-9dc2fbd35e55
-updated_at: 1633333146
+updated_at: 1633490320
 template: template_home
 block1articlelink: 'entry::a3a87e8d-2d50-462d-8f88-554ae1749f04'
 block2articlelink: 'entry::a3a87e8d-2d50-462d-8f88-554ae1749f04'

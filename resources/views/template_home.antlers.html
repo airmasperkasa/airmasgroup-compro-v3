@@ -83,7 +83,7 @@
                 <h1 class="display-5 font-smbold lh-1 mb-4 text-center">{{ block_3_sub_title }}</h1>
                 {{ block_3_card }}
                     <div class="col-lg-3 col-md-6">
-                        <div class="card cards move-on-hover fbl h-100">
+                        <div class="card cards move-on-hover {{ index == 0 ? 'fbl' : '' }} h-100">
                             <h5 class="mt-2">{{ block3card_title }}</h5>
                             <div class="icon icon-shape">
                                 <img src="{{ block3image }}" class="innerIcon" alt="">
@@ -124,8 +124,8 @@
                     <h1 class="display-5 font-smbold lh-1 mb-4">{{ block_5_sub_title }}</h1>
                     <p class="lh-2">{{ block5article | strip_tags:p }}</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
-                        <button type="button" class="btn btn-outline-primary primary px-4"
-                            onclick="location.href='https://ayoopeduli.com/';">{{ block5articlelink_label }}</button>
+                        <a href="{{ block5articlelink }}"><button type="button" class="btn btn-outline-primary primary px-4">
+                            {{ block5articlelink_label }}</button></a>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden position-absolute right-0 d-lg-block d-none me-n8">
@@ -134,12 +134,12 @@
             </div>
         </div>
     </section>
-    <section class="bg-white px-3 py-lg-5">
-        <div class="container d-flex align-items-center" style="min-height: 500px;">
-            <div class="row align-items-center py-5 px-lg-5">
+    <section class="bg-white px-3 py-lg-5 w-100">
+        <div class="container d-flex align-items-center w-100" style="min-height: 500px;">
+            <div class="row align-items-center justify-content-center py-5 px-lg-5 w-100">
                 <h1 class="display-5 font-smbold lh-1 mb-5 text-center">{{ block_6_sub_title }}</h1>
                 {{ partners }}
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4 {{ partners | length < 3 ? 'w-auto' : '' }}">
                     <div class="card rounded-3 p-4">
                         <div class="icon icon-shape mx-auto">
                             <img src="{{ block6image }}" alt="">
@@ -147,13 +147,6 @@
                     </div>
                 </div>
                 {{ /partners }}
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card rounded-3 p-4">
-                        <div class="icon icon-shape mx-auto">
-                            <img src="https://airmasgroup.co.id/assets/images/asus.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

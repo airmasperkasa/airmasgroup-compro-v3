@@ -1,0 +1,11 @@
+title: 'Additional Pages'
+inject:
+  view_model: App\ViewModels\NavCount
+template: template_additional
+layout: layout
+revisions: false
+route: 'pages-{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

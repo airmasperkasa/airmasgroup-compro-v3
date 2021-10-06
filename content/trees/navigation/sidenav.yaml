@@ -5,8 +5,12 @@ tree:
     url: about
   -
     id: 4b510352-d672-4ed3-8cd0-68d66857a825
-    title: Cabang
+    title: 'Cabang Kami'
     url: branches
+  -
+    id: 6e5a40e2-5ab6-4d6f-8abd-4c412c778d32
+    title: Produk
+    url: product
   -
     id: 0a4b86a3-e735-42a3-a26d-6ff99d1a7bba
     title: Solusi
@@ -15,6 +19,30 @@ tree:
     id: 5e3df0a2-c15a-4b7b-a16e-e6c76214279c
     title: 'Lini Bisnis'
     url: business
+  -
+    id: 2a23f329-d976-4963-aa8c-c1fb3d096c8c
+    title: Rekanan
+    url: partner
+  -
+    id: 3ee2e992-0e83-48d6-b508-730ab76a6c43
+    title: Karir
+    url: 'https://user.ayoojob.id/'
+  -
+    id: f4a40ecd-6420-4553-821b-9407456ff8f7
+    title: Berita
+    url: 'https://ayooberita.com/'
+  -
+    id: 9b9a0601-0e98-4573-92ec-ccfaa297b9a6
+    title: 'Contact Us'
+    url: contact
+  -
+    id: 8fc03466-7c01-4229-acd8-cdf6b94c8028
+    title: 'Syarat & Ketentuan'
+    url: terms
+  -
+    id: 379e46d4-03a5-454c-a0d1-af71cc1fa2f9
+    title: 'Kebijakan Privacy'
+    url: privacy
   -
     id: f4504b67-2aed-44a2-8428-01819cf593c9
     title: FAQ

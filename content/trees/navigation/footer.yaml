@@ -11,6 +11,10 @@ tree:
         title: 'Tentang Air Mas'
         url: about
       -
+        id: 52416325-c299-49c8-a451-95d3a267fa6e
+        title: 'Cabang Kami'
+        url: branch
+      -
         id: ca7f722b-2ab9-4a4f-9de1-263df3c69022
         title: Solusi
         url: solution
@@ -22,6 +26,14 @@ tree:
         id: 153864fb-53b1-4d46-a221-b4c8f25531ed
         title: Bisnis
         url: business
+      -
+        id: b0b33195-3f15-49c7-9120-7504d23306a9
+        title: Karir
+        url: 'https://user.ayoojob.id/'
+      -
+        id: b371ece5-b420-4fe0-a5c1-197762d1cf12
+        title: Berita
+        url: 'https://ayooberita.com/'
   -
     id: 3db956a8-e345-4031-8bc7-f8d5822c63ff
     title: 'Second Column'
@@ -30,10 +42,26 @@ tree:
         id: 7fbfef63-2326-426a-9cdb-3cb9ca12426e
         title: Partner
         url: partner
+      -
+        id: e27fcf6b-144b-45ab-ab12-2d51ed3874fc
+        title: Karir
+        url: 'https://user.ayoojob.id/'
+      -
+        id: 053d4bec-ad87-4029-b7bc-439b94758a82
+        title: Berita
+        url: 'https://ayooberita.com/'
+      -
+        id: d37947c7-2bea-4e48-bf00-a945d7a06bec
+        title: 'Program CSR'
+        url: 'https://ayoopeduli.com/'
   -
     id: 5b802cc5-54bf-4216-9535-8588b23faa81
     title: 'Third Column'
     children:
+      -
+        id: db8c0d9d-daa2-4be3-be43-1c74ab7351fc
+        title: 'Kontak Kami'
+        url: contact
       -
         id: 6f56c45a-1cda-4dcd-8631-1bd4dd83e074
         title: 'Syarat & Ketentuan'

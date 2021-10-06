@@ -1,0 +1,60 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: linkedin_link
+        field:
+          input_type: url
+          antlers: false
+          display: Linkedin
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - url
+      -
+        handle: youtube_link
+        field:
+          input_type: url
+          antlers: false
+          display: Youtube
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: instagram_link
+        field:
+          input_type: url
+          antlers: false
+          display: Instagram
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: facebook_link
+        field:
+          input_type: url
+          antlers: false
+          display: Facebook
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - url
+      -
+        handle: twitter_link
+        field:
+          input_type: url
+          antlers: false
+          display: Twitter
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - url
