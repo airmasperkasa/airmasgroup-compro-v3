@@ -21,8 +21,8 @@ items:
     type: product
     enabled: true
   -
-    productcard_title: Flashdisk
-    productimage: fd.jpg
+    productcard_title: Tablet
+    productimage: tablet-1633491523.webp
     type: product
     enabled: true
   -
@@ -30,6 +30,41 @@ items:
     productimage: handphone.jpg
     type: product
     enabled: true
+  -
+    productcard_title: Flashdisk
+    productimage: fd.jpg
+    type: product
+    enabled: true
+  -
+    productcard_title: 'Smart Watch'
+    productimage: smart-watch.jpg
+    type: product
+    enabled: true
+  -
+    productcard_title: Monitor
+    productimage: monitor.webp
+    type: product
+    enabled: true
+  -
+    productcard_title: Scanner
+    productimage: scanner.png
+    type: product
+    enabled: true
+  -
+    productcard_title: Server
+    productimage: server.jpg
+    type: product
+    enabled: true
+  -
+    productcard_title: 'Modern Router'
+    productimage: modern-router.jpg
+    type: product
+    enabled: true
+  -
+    productcard_title: 'Camera Digital'
+    productimage: camera-digital.jpg
+    type: product
+    enabled: true
 updated_by: 2c75e6b1-4ee4-4f77-b8bf-9dc2fbd35e55
-updated_at: 1633070377
+updated_at: 1633491683
 ---

@@ -16,5 +16,5 @@ fields:
       instructions_position: above
       validate:
         - image
-        - 'mimes:jpg,jpeg,png,bmp,svg'
         - 'max:2048'
+        - 'mimes:jpg,jpeg,png,bmp,svg,webp'

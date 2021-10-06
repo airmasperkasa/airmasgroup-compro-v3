@@ -35,33 +35,47 @@
                 <div class="col-xs-12 col-lg-2 mb-3">
                     <h6>Follow Kami</h6>
                     <ul class="d-flex flex-row ms-n3 nav sosmed">
+                        {{ if social_media:linkedin_link }}
                         <li class="nav-item">
-                            <a class="nav-link linkedin" href="https://id.linkedin.com/company/airmas-perkasa"
+                            <a class="nav-link linkedin" href="{{ social_media:linkedin_link }}"
                                 target="_blank">
                                 <i class="fab fa-lg fa-linkedin-in" aria-hidden="true"></i>
                             </a>
                         </li>
+                        {{ endif }}
+
+                        {{ if social_media:youtube_link }}
                         <li class="nav-item">
-                            <a class="nav-link youtube" href="https://www.youtube.com/user/bazoparte" target="_blank">
+                            <a class="nav-link youtube" href="{{ social_media:youtube_link }}" target="_blank">
                                 <i class="fab fa-lg fa-youtube" aria-hidden="true"></i>
                             </a>
                         </li>
+                        {{ endif }}
+                        
+                        {{ if social_media:instagram_link }}
                         <li class="nav-item">
-                            <a class="nav-link instagram" href="https://www.instagram.com/airmasgroupindonesia/?hl=en"
+                            <a class="nav-link instagram" href="{{ social_media:instagram_link }}"
                                 target="_blank">
                                 <i class="fab fa-lg fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
+                        {{ endif }}
+
+                        {{ if social_media:facebook_link }}
                         <li class="nav-item">
-                            <a class="nav-link facebook" href="https://www.facebook.com/airmasid" target="_blank">
+                            <a class="nav-link facebook" href="{{ social_media:facebook_link }}" target="_blank">
                                 <i class="fab fa-lg fa-facebook-f" aria-hidden="true"></i>
                             </a>
                         </li>
+                        {{ endif }}
+
+                        {{ if social_media:twitter_link }}
                         <li class="nav-item">
-                            <a class="nav-link twitter" href="" target="_blank">
+                            <a class="nav-link twitter" href="{{ social_media:twitter_link }}" target="_blank">
                                 <i class="fab fa-lg fa-twitter" aria-hidden="true"></i>
                             </a>
                         </li>
+                        {{ endif }}
                     </ul>
                 </div>
             </div>

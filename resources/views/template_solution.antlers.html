@@ -33,13 +33,13 @@
                                     <button class="accordion-button {{ index == 0 ? '' : 'collapsed'}} font-weight-bold text-start" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse{{ index }}" aria-expanded="true"
                                         aria-controls="collapse{{ index }}">
-                                        {{ solution_label }}
+                                        {{ solution_label | strip_tags:blockquote }}
                                     </button>
                                 </h5>
                                 <div id="collapse{{ index }}" class="accordion-collapse collapse {{ index == 0 ? 'show' : ''}}"
                                     aria-labelledby="heading{{ index }}" data-bs-parent="#accordion">
                                     <div class="accordion-body opacity-8">
-                                        {{ solutionarticle }}
+                                        {{ solutionarticle | strip_tags:p }}
                                         <div class="center">
                                             {{ images }}
                                             <div>
