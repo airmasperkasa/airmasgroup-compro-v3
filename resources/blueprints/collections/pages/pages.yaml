@@ -30,6 +30,8 @@ sections:
           type: template
           display: Template
           localizable: true
+      -
+        import: meta
   sidebar:
     display: Sidebar
     fields:

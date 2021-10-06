@@ -1,0 +1,22 @@
+title: Meta
+fields:
+  -
+    handle: meta_description
+    field:
+      input_type: text
+      antlers: false
+      display: 'Meta Description'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: meta_keywords
+    field:
+      input_type: text
+      antlers: false
+      display: 'Meta Keywords'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
