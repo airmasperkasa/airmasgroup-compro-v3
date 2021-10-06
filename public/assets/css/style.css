@@ -914,7 +914,13 @@ p {
   line-height: 1.1;
 }
 
-.ponywhat { display: none; }
+.ponywhat { 
+  display: none; 
+}
+
+.pdf-view {
+  height:650px;
+}
 
 @media only screen and (max-width: 767px) {
   .vh-100 {

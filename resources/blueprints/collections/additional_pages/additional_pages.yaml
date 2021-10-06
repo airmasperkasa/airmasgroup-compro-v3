@@ -1,0 +1,58 @@
+title: 'Additional Pages'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+  content:
+    display: Content
+    fields:
+      -
+        handle: sub_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Sub Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: items
+        field:
+          collapse: false
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  import: additional_block
+          display: Items
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
