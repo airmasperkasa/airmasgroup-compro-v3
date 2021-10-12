@@ -140,9 +140,129 @@ partners:
     type: new_set
     enabled: true
 updated_by: 2c75e6b1-4ee4-4f77-b8bf-9dc2fbd35e55
-updated_at: 1633490320
+updated_at: 1634035136
 template: template_home
 block1articlelink: 'entry::a3a87e8d-2d50-462d-8f88-554ae1749f04'
 block2articlelink: 'entry::a3a87e8d-2d50-462d-8f88-554ae1749f04'
 block5articlelink: 'https://ayoopeduli.com'
+timeline_sub_title: 'Perjalanan Bisnis Air Mas Group'
+events:
+  -
+    year_s: '2001'
+    descriptions:
+      -
+        description: 'Bisnis Warung Internet (16 – 90 unit PC).'
+        type: new_set
+        enabled: true
+      -
+        description: 'Salah satu usaha warnet ternama di kota Jakarta sebagai penyedia PC terbanyak.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2002 - 2003'
+    descriptions:
+      -
+        description: 'Berdiri PT Armindo Mandiri'
+        type: new_set
+        enabled: true
+      -
+        description: 'Mengawali ikut tender pengadaan barang project pemerintahan.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2004 - 2006'
+    descriptions:
+      -
+        description: 'Berdiri PT Garda Nusantara'
+        type: new_set
+        enabled: true
+      -
+        description: 'Fokus dalam bisnis pengadaan barang project pemerintahan, dengan cara menambah beberapa kategori barang.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2007'
+    descriptions:
+      -
+        description: 'Berdiri PT Air Mas Perkasa'
+        type: new_set
+        enabled: true
+      -
+        description: 'Bisnis ini awalnya dikelola oleh 3 orang, yaitu Basuki Surodjo, Mas Fauzi, dan Vencent Hardi.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2008 - 2012'
+    descriptions:
+      -
+        description: 'Pertumbuhan pesat PT Air Mas Perkasa. Jumlah karyawan bertambah menjadi 80 – 100 orang.'
+        type: new_set
+        enabled: true
+      -
+        description: 'PT Air Mas Perkasa memenangkan tander pengadaan ATK di Bapenas.'
+        type: new_set
+        enabled: true
+      -
+        description: 'Pembuatan dan pengembangan platform Ayooklik.com.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2009'
+    descriptions:
+      -
+        description: 'Berdiri PT Arca Pusaka'
+        type: new_set
+        enabled: true
+      -
+        description: 'Pendirian toko retail yang menawarkan produk-produk merek ternama. Fokus bisnis awalnya pada produk IT dan Peripheral. Kemudian perusahaan ini mengembangkan bisnisnya juga pada kategori produk Gadget, Alat-alat Kesehatan, Perkakas dan lain sebagainya.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2013 - 2014'
+    descriptions:
+      -
+        description: 'Mulai membangun kerja sama dengan Ayooklik Surabaya.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2015'
+    descriptions:
+      -
+        description: 'Terbentukanya unit bisnis sewa melalui Ayoosewa dan retail mobile aksesoris melalui Ammob.'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2016'
+    descriptions:
+      -
+        description: 'Terbentuknya unis bisnis Food & Baverage melalui Ayookopi'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    year_s: '2017'
+    descriptions:
+      -
+        description: 'Terbentuknya unit bisnis Media Informasi melalui Ayooberita'
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
 ---

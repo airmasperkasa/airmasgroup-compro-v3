@@ -897,6 +897,69 @@ p {
   margin-top: 4px;
 }
 
+.slider-dots::before {
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+  z-index: 0;
+}
+.slider-dots .slick-slide {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.slider-dots .slick-slide::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 4px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: 2px solid white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.slider-dots .slick-slide.slick-current.slick-active {
+  color: #E6CC44;
+  font-family: "Volte Semibold", sans-serif;
+  font-size: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.slider-dots .slick-slide.slick-current.slick-active::before {
+  width: 20px;
+  height: 20px;
+  bottom: 3px;
+  border: 3px solid white;
+  background-color: #E6CC44;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 2px 10px rgba(221, 126, 16, 0.2);
+          box-shadow: 0 2px 10px rgba(221, 126, 16, 0.2);
+}
+.slider-dots .slick-slide > div {
+  margin-bottom: 30px;
+}
+
+.slider-content {
+  padding: 70px 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.slider-content .slick-slide {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 ::marker {
   font-size: 16px;
 }
@@ -948,6 +1011,15 @@ p {
 @media only screen and (min-width: 992px) and (max-width: 1300px) {
   .nav.nav-header.nav-pills .nav-link, .nav.nav-cheader.nav-pills .nav-link {
     min-width: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slider-content {
+    padding: 20px 0;
+  }
+  .slider-content .slick-slide {
+    font-size: 1rem;
+    padding: 0 30px;
   }
 }
 @font-face {

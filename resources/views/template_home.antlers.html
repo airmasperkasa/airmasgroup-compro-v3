@@ -1,3 +1,9 @@
+{{ section:css }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{{ /section:css }}
+
     <div class="container">
         <div>
             {{ partial:main_nav }}
@@ -116,6 +122,29 @@
         </div>
     </section>
 
+    
+    <section class="bg-smoke px-3 py-5">
+        <div class="container my-5">
+            <h1 class="display-5 font-smbold lh-1 text-center">Perjalanan Bisnis Air Mas Group</h1>
+            <div class="slider-content">
+                {{ events }}
+                <div>
+                    <ul class="list-unstyled">
+                        {{ descriptions }}
+                        <li class="mb-2">{{ description }}</li>
+                        {{ /descriptions }}
+                    </ul>
+                </div>
+                {{ /events }}
+            </div>
+            <div class="slider-dots">
+                {{ events }}
+                <div>{{ year_s }}</div>
+                {{ /events }}
+            </div>
+        </div>
+    </section>
+
     <section class="bg-inner px-3 overflow-hidden">
         <img src="/assets/img/icons/pattern-lines.svg" class="position-absolute w-100 h-100" alt="">
         <div class="container">
@@ -151,3 +180,72 @@
         </div>
     </section>
     {{ partial:footer }}
+
+    {{ section:js }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider-content').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+                asNavFor: '.slider-dots',
+
+                responsive: [
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true
+                }
+                }
+            ]
+            });
+            $('.slider-dots').slick({
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                asNavFor: '.slider-content',
+                dots: false,
+                arrows: false,
+                centerMode: true,
+                focusOnSelect: true,
+                responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: false
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: true,
+                    centerMode: true
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: true
+                }
+                }
+            ]
+            });
+        });
+    </script>
+
+    {{ /section:js }}
