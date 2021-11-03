@@ -84,7 +84,7 @@ sections:
           collapse: false
           sets:
             new_set:
-              display: 'New Set'
+              display: Item
               fields:
                 -
                   import: card
@@ -100,7 +100,7 @@ sections:
           collapse: false
           sets:
             new_set:
-              display: 'New Set'
+              display: Item
               fields:
                 -
                   import: card
@@ -119,7 +119,7 @@ sections:
           collapse: false
           sets:
             new_set:
-              display: 'New Set'
+              display: Personnel
               fields:
                 -
                   import: card
@@ -136,7 +136,7 @@ sections:
           collapse: false
           sets:
             new_set:
-              display: 'New Set'
+              display: Personnel
               fields:
                 -
                   import: card
