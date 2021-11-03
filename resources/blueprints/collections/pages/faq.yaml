@@ -45,7 +45,7 @@ sections:
           validate:
             - required
   faq:
-    display: faq
+    display: FAQ
     fields:
       -
         handle: sub_title
@@ -66,7 +66,7 @@ sections:
           collapse: false
           sets:
             new_set:
-              display: 'New Set'
+              display: 'FAQ Item'
               fields:
                 -
                   import: faq

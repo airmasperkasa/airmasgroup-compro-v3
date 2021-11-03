@@ -45,7 +45,7 @@ sections:
           validate:
             - required
   block1:
-    display: Block1
+    display: 'About Us Section'
     fields:
       -
         handle: block_1_sub_title
@@ -64,7 +64,7 @@ sections:
         import: article
         prefix: block1
   block2:
-    display: Block2
+    display: 'Visi, Misi, Filosofi Section'
     fields:
       -
         import: article
@@ -76,7 +76,7 @@ sections:
         import: article
         prefix: filosofi
   block3:
-    display: Block3
+    display: Achievement
     fields:
       -
         handle: serifikat
@@ -111,7 +111,7 @@ sections:
           listable: hidden
           instructions_position: above
   block4:
-    display: Block4
+    display: Management
     fields:
       -
         handle: bods

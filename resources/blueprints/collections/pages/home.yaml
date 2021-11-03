@@ -43,7 +43,7 @@ sections:
           listable: hidden
           instructions_position: above
   block_1:
-    display: 'Block 1'
+    display: 'First Section'
     fields:
       -
         handle: block_1_sub_title
@@ -84,7 +84,7 @@ sections:
         import: image
         prefix: block1
   block_2:
-    display: 'Block 2'
+    display: 'Tentang Kami Section'
     fields:
       -
         handle: block_2_sub_title
@@ -109,7 +109,7 @@ sections:
         import: mini_info
         prefix: lower
   block_3:
-    display: 'Block 3'
+    display: 'What We Do Section'
     fields:
       -
         handle: block_3_sub_title
@@ -142,7 +142,7 @@ sections:
           listable: hidden
           instructions_position: above
   block_4:
-    display: 'Block 4'
+    display: 'Solusi Kami Section'
     fields:
       -
         handle: block_4_sub_title
@@ -242,7 +242,7 @@ sections:
           listable: hidden
           instructions_position: above
   block_5:
-    display: 'Block 5'
+    display: 'Program CSR Section'
     fields:
       -
         handle: block_5_sub_title
@@ -264,7 +264,7 @@ sections:
         import: image
         prefix: block5
   block_6:
-    display: 'Block 6'
+    display: 'Our Partner Section'
     fields:
       -
         handle: block_6_sub_title

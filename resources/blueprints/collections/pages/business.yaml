@@ -64,7 +64,7 @@ sections:
           collapse: false
           sets:
             new_set:
-              display: 'New Set'
+              display: 'Business Item'
               fields:
                 -
                   import: card
